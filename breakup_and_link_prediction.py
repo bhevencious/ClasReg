@@ -395,8 +395,8 @@ def main_prog_flow(myCls, args, edge_list):
             kendall, kendall_pval = stats.kendalltau(base_feats[src_feat_idx,1:], base_feats[dest_feat_idx,1:])
             euc_norm = euclidean_norm(base_feats[src_feat_idx,1:], base_feats[dest_feat_idx,1:])
             cos_sim = cosine_sim(base_feats[src_feat_idx,1:], base_feats[dest_feat_idx,1:])
-            #row = [X[i,0], X[i,1]] + X_feats + [y[i], round(comn_dist, 7), round(y_reg, 7), round(kendall, 3), round(euc_norm, 7), round(cos_sim, 3)]
-            row = [X[i,0], X[i,1]] + X_feats + [y[i], round(comn_dist, 3), round(y_reg, 3), round(kendall, 3), round(euc_norm, 3), round(cos_sim, 3)]
+            #row = [X[i,0], X[i,1]] + X_feats + [y[i], round(comn_dist, 7), round(y_reg, 7), round(kendall, 7), round(euc_norm, 7), round(cos_sim, 7)]
+            row = [X[i,0], X[i,1]] + X_feats + [y[i], round(comn_dist, 5), round(y_reg, 5), round(kendall, 5), round(euc_norm, 5), round(cos_sim, 5)]
             fuselage = fuselage.append([row], ignore_index=True)
         # Preserve extracted features
         col_name = list()
