@@ -85,7 +85,7 @@ def args_parse_cmd():
     parser = ArgumentParser(description='START-HELP: Program for forecasting/predicting breakup or schism in social networks', epilog='END-HELP: End of assistance/help section',
                             formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve')
     parser.add_argument('-rp', '--root_path', nargs='+', default='generic_datasets/', type=str, help='Generic root path for application/program')    
-    parser.add_argument('-el', '--edge_list', nargs='+', default='Cora', type=str, help='Edge list (filename WITHOUT extension) of reference graph')  #'CiteSeer', 'Cora', 'Internet-Industry-Partnerships', 'PubMed-Diabetes', 'Terrorists-Relation', 'Zachary-Karate'
+    parser.add_argument('-el', '--edge_list', nargs='+', default='CiteSeer', type=str, help='Edge list (filename WITHOUT extension) of reference graph')  #'CiteSeer', 'Cora', 'Internet-Industry-Partnerships', 'PubMed-Diabetes', 'Terrorists-Relation', 'Zachary-Karate'
     parser.add_argument('-rm', '--run_mode', nargs='+', default='single', type=str, choices=['single', 'all'], help='Run model per specified dataset OR cumulatively for all intrinsic datasets')
     args = parser.parse_args()
     return args
@@ -162,7 +162,7 @@ def evaluations(test_y, pred_y, pred_y_proba, pred_y_2, pred_y_3):
     auc_roc = roc_auc_score(test_y, pred_y_proba)
     top_1, top_3 = predHits(test_y, pred_y, pred_y_2, pred_y_3)   
     
-    print("\nEvaluation Report:")
+    print("\nLink Prediction Evaluation Report:")
     evals = {'avg_pr':round(avg_pr, 4), 'precision':round(precision, 4), 'recall':round(recall, 4), 'accuracy':round(accuracy, 4), 'f1':round(f1, 4), 'mcc':round(mcc, 4), 'auc_roc':round(auc_roc, 4), 'top_1':round(top_1, 4), 'top_3':round(top_3, 4)}
     
     return evals
@@ -283,6 +283,7 @@ def inference_predictor(train_X, train_y, test_X, test_y, fname):
     # Generating 'Unlink' records/rows/entities
     unlink_ties = result.query('unlink == -1 & truth_y_cls == 1')
     unlink_ties.to_csv(fname+'.unlink', sep='\t', header=True, index=False)
+    print("\nList of Breakup/Rift Ties:")
     print(unlink_ties)
     
     # Evaluations:
