@@ -15,7 +15,7 @@ ClasReg, as a scalable and bifunctional framework, exploits its multilayer frame
 # 2. Overview of Directory Structure
 | Directory | GitHub URL/Link | Description |
 | --------- | --------------- | ----------- |
-| custom_classes | [visit URL] (https://github.com/bhevencious/ClasReg/tree/master/custom_classes) | Subdirectory containing dependencies (class files) for ClasReg |
+| custom_classes | [visit URL](https://github.com/bhevencious/ClasReg/tree/master/custom_classes) | Subdirectory containing dependencies (class files) for ClasReg |
 3.
 breakup_and_link_prediction.py: https://github.com/bhevencious/ClasReg/blob/master/
 breakup_and_link_prediction.py
