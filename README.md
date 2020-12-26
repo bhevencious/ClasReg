@@ -12,7 +12,7 @@ Basically, ClasReg is a hybrid (Deep Learning and Heuristic methodologies) model
 
 ClasReg, as a scalable and bifunctional framework, exploits its multilayer framework for simultaneously resolving the problems of Breakup/Rift Prediction as well as Link Prediction in social network structures.
 
-# 2. Overview of Directory Structure
+# 2. Overview of ClasReg's (Repository) Directory Structure
 | Directory/File | GitHub URL/Link | Description |
 | -------------- | --------------- | ----------- |
 | custom_classes | [visit URL](https://github.com/bhevencious/ClasReg/tree/master/custom_classes) | Subdirectory containing ClasReg's dependencies (or class files). |
@@ -21,6 +21,7 @@ ClasReg, as a scalable and bifunctional framework, exploits its multilayer frame
 | eval_log.txt | [visit URL](https://github.com/bhevencious/ClasReg/blob/master/eval_log.txt) | Log file, which records the details and performance reports of ClasReg, with respect to Link Prediction task on each dataset. |
 
 # 3. Baselines (or Benchmark Models)
+The benchmark models (or baselines) evaluated against ClasReg herein include, viz:
 | S/N | Baseline | Acronym | Description |
 | --- | -------- | ------- | ----------- |
 | 1. | Adamic Adar Index | Adamic | Strength-of-Ties methodology |
@@ -42,6 +43,7 @@ ClasReg, as a scalable and bifunctional framework, exploits its multilayer frame
 | 17. | Structural Deep Network Embedding | SDNE | Neural-Network Graph Embedding approach |
 
 # 4. Benchmark Datasets
+The benchmark datasets employed herein for experiments and analyses include, viz:
 | Dataset | Nodes/Actors | Edges/Ties |
 | ------- | ------------ | ---------- |
 | CiteSeer | 3,312 | 4,732 |
