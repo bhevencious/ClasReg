@@ -76,9 +76,8 @@ $ pip install -e .
 ```
 
 ## 5.1.3. Direct download of repository
-```
 [Click here to initiate download](https://github.com/bhevencious/ClasReg/archive/master.zip)
-```
+
 
 ## 5.2.1. ClasReg's run parameters/options
 | Short Parameter | Long~Parameter | Data Type | Default  | Description |
