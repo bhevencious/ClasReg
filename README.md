@@ -81,8 +81,8 @@ $ pip install -e .
 ```
 
 ## 5.2.1. ClasReg's run parameters/options
-| Parameter Option | Data Type | Default  | Description |
-| --------- | ------- | --------- | ----------- |
-| -rp, --root_path | string | 'generic_datasets/' | Base/Root path for ClasReg's operations. |    
-| -el, --edge_list | string | 'CiteSeer' | Name of the folder containing the input-dataset edgelist. NB: The *.edgelist* file MUST bear the same name as its host folder/directory. | 
-| -rm, --run_mode | string | 'single' | This defines how ClasReg will evaluate the datasets. ClasReg can either be run per ('single') specified dataset OR cumulatively ('all') for all intrinsic datasets. |
+| Short Parameter | Long Parameter | Data Type | Default  | Description |
+| --------------- | -------------- | --------- | -------- | ----------- |
+| -rp | --root_path | string | 'generic_datasets/' | Base/Root path for ClasReg's operations. |    
+| -el | --edge_list | string | 'CiteSeer' | Name of the folder containing the input-dataset edgelist. NB: The *.edgelist* file MUST bear the same name as its host folder/directory. | 
+| -rm | --run_mode | string | 'single' | This defines how ClasReg will evaluate the datasets. ClasReg can either be run per ('single') specified dataset OR cumulatively ('all') for all intrinsic datasets. |
