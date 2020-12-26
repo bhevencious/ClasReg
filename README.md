@@ -56,5 +56,14 @@ The benchmark datasets employed herein for experiments and analyses include, viz
 # 5. Code Installation and Usage
 The implementation for the baselines (or benchmark models) based on Strength-of-Ties methodology (*Adamic, CommNeigh, Jaccard, Katz, PrefAttach, and ResAlloc*) is availablve via: [EvalNE Library](https://github.com/bhevencious/EvalNE).
 
-The implementation for the baselines (or benchmark models) based on Graph-Embedding approach (*DeepWalk, GAE, GraFac, GraRep, HOPE, LapEigen, LINE, Node2vec, SDNE, Struc2vec, and SVD)*) is available via: [BioNEV Library](https://github.com/bhevencious/BioNEV)
- for the strength-of-ties baselines (
+The implementation for the baselines (or benchmark models) based on Graph-Embedding approach (*DeepWalk, GAE, GraFac, GraRep, HOPE, LapEigen, LINE, Node2vec, SDNE, Struc2vec, and SVD)*) is available via: [BioNEV Library](https://github.com/bhevencious/BioNEV).
+
+The implementation for our proposed hybrid framework, **ClasReg**, is available for direct installation (from GitHub) via any of the following options, viz:
+## 5.1. Direct Installation via pip
+```
+# Python 2
+$ pip install git+https://github.com/bhevencious/ClasReg.git
+
+# Python 3
+$ pip3 install git+https://github.com/bhevencious/ClasReg.git
+```
