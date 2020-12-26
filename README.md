@@ -80,8 +80,9 @@ $ pip install -e .
 [Click here to initiate download](https://github.com/bhevencious/ClasReg/archive/master.zip)
 ```
 
-## 5.2.0. ClasReg's run parameters/options
- parser.add_argument('-rp', '--root_path', nargs='+', default='generic_datasets/', type=str, help='Generic root path for application/program')    
-    parser.add_argument('-el', '--edge_list', nargs='+', default='CiteSeer', type=str, help='Edge list (filename WITHOUT extension) of reference graph')  #'CiteSeer', 'Cora', 'Internet-Industry-Partnerships', 'PubMed-Diabetes', 'Terrorists-Relation', 'Zachary-Karate'
-    parser.add_argument('-rm', '--run_mode', nargs='+', default='single', type=str, choices=['single', 'all'], help='Run model per specified dataset OR cumulatively for all intrinsic datasets')
-    args = parser.parse_args()
+## 5.2.1. ClasReg's run parameters/options
+| Parameter | Data Type | Default  | Description |
+| --------- | ------- | --------- | ----------- |
+| -rp or --root_path | string | 'generic_datasets/' | Base/Root path for ClasReg's operations. |    
+| -el or --edge_list | string | 'CiteSeer' | Name of the folder containing the input-dataset edgelist. NB: The *.edgelist* file MUST bear the same name as its host folder/directory. | 
+| -rm or --run_mode | string | 'single' | This defines how ClasReg will evaluate the datasets. ClasReg can either be run per ('single') specified dataset OR cumulatively ('all') for all intrinsic datasets. |
