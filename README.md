@@ -23,23 +23,23 @@ ClasReg, as a scalable and bifunctional framework, exploits its multilayer frame
 # 3. Baselines (or Benchmark Models)
 | Baseline | Acronym | Description |
 | -------- | ------- | ----------- |
-| Adamic Adar Index | Adamic | Strength of Ties |
-| Common Neighbor Index | CommNeigh | Strength of Ties |
-| Jaccard Coefficient | Jaccard | Strength of Ties |
-| Katz Index | Katz | Strength of Ties |
-| Preferential Attachment Index | PrefAttach | Strength of Ties |
-| Resource Allocation Index | ResAlloc | Strength of Ties |
-| DeepWalk | DeepWalk | Graph-Embedding Approach based on Random Walks |
-| Node2vec | Node2vec | Graph-Embedding Approach based on Random Walks |
-| Struc2vec | Struc2vec | Graph-Embedding Approach based on Random Walks |
-| Graph Factorization | GraFac | Graph-Embedding Approach based on Matrix Factorization |
-| Graph Representations | GraRep | Graph-Embedding Approach based on Matrix Factorization |
-| High-Order Proximity preserved Embedding | HOPE | Graph-Embedding Approach based on Matrix Factorization |
-| Laplacian Eigenmap | LapEigen | Graph-Embedding Approach based on Matrix Factorization |
-| Singular Value Decomposition | SVD | Graph-Embedding Approach based on Matrix Factorization |
-| Graph Auto-Encoders | GAE | Graph-Embedding Approach based on Neural Networks |
-| Large-scale Information Network Embedding | LINE | Graph-Embedding Approach based on Neural Networks |
-| Structural Deep Network Embedding | SDNE | Graph-Embedding Approach based on Neural Networks |
+| Adamic Adar Index | Adamic | Strength-of-Ties Methodology |
+| Common Neighbor Index | CommNeigh | Strength-of-Ties Methodology |
+| Jaccard Coefficient | Jaccard | Strength-of-Ties Methodology |
+| Katz Index | Katz | Strength-of-Ties Methodology |
+| Preferential Attachment Index | PrefAttach | Strength-of-Ties Methodology |
+| Resource Allocation Index | ResAlloc | Strength-of-Ties Methodology |
+| DeepWalk | DeepWalk | Random-Walk Graph Embedding Approach |
+| Node2vec | Node2vec | Random-Walk Graph Embedding Approach |
+| Struc2vec | Struc2vec | Random-Walk Graph Embedding Approach |
+| Graph Factorization | GraFac | Matrix-Factorization Graph Embedding Approach |
+| Graph Representations | GraRep | Matrix-Factorization Graph Embedding Approach |
+| High-Order Proximity preserved Embedding | HOPE | Matrix-Factorization Graph Embedding Approach |
+| Laplacian Eigenmap | LapEigen | Matrix-Factorization Graph Embedding Approach |
+| Singular Value Decomposition | SVD | Matrix-Factorization Graph Embedding Approach |
+| Graph Auto-Encoders | GAE | Neural-Network Graph Embedding Approach |
+| Large-scale Information Network Embedding | LINE | Neural-Network Graph Embedding Approach |
+| Structural Deep Network Embedding | SDNE | Neural-Network Graph Embedding Approach |
 
 # 4. Benchmark Datasets
 BioNEV: https://github.com/bhevencious/BioNEV
