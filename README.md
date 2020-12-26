@@ -42,10 +42,11 @@ ClasReg, as a scalable and bifunctional framework, exploits its multilayer frame
 | 17. | Structural Deep Network Embedding | SDNE | Neural-Network Graph Embedding approach |
 
 # 4. Benchmark Datasets
-BioNEV: https://github.com/bhevencious/BioNEV
-Library for the graph-embedding baselines (DeepWalk, GAE, GraFac, GraRep, HOPE,
-LapEigen, LINE, Node2vec, SDNE, Struc2vec, and SVD)
-6.
-EvalNE: https://github.com/bhevencious/EvalNE
-Library for the strength-of-ties baselines (Adamic, CommNeigh, Jaccard, Katz, PrefAttach,
-and ResAlloc)
+| Dataset | Nodes/Actors | Edges/Ties |
+| ------- | ------------ | ---------- |
+| CiteSeer | 3,312 | 4,732 |
+| Cora | 2,708 | 5,429 |
+| Internet-Industry Partnerships | 219 | 631 |
+| PubMed-Diabetes | 19,717 | 44,338 |
+| Terrorists-Relation | 851 | 8,592  |
+| Zachary-Karate | 34 | 78 |
