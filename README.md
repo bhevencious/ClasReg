@@ -52,3 +52,9 @@ The benchmark datasets employed herein for experiments and analyses include, viz
 | PubMed-Diabetes | 19,717 | 44,338 |
 | Terrorists-Relation | 851 | 8,592  |
 | Zachary-Karate | 34 | 78 |
+
+# 5. Code Installation and Usage
+The implementation for the baselines (or benchmark models) based on Strength-of-Ties methodology (*Adamic, CommNeigh, Jaccard, Katz, PrefAttach, and ResAlloc*) is availablve via: [EvalNE Library](https://github.com/bhevencious/EvalNE).
+
+The implementation for the baselines (or benchmark models) based on Graph-Embedding approach (*DeepWalk, GAE, GraFac, GraRep, HOPE, LapEigen, LINE, Node2vec, SDNE, Struc2vec, and SVD)*) is available via: [BioNEV Library](https://github.com/bhevencious/BioNEV)
+ for the strength-of-ties baselines (
