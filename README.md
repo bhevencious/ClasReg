@@ -67,3 +67,5 @@ $ pip install git+https://github.com/bhevencious/ClasReg.git
 # Python 3
 $ pip3 install git+https://github.com/bhevencious/ClasReg.git
 ```
+
+## 5.2. Direct Installation via pip
