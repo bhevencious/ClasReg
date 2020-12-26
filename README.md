@@ -59,7 +59,7 @@ The implementation for the baselines (or benchmark models) based on Strength-of-
 The implementation for the baselines (or benchmark models) based on Graph-Embedding approach (*DeepWalk, GAE, GraFac, GraRep, HOPE, LapEigen, LINE, Node2vec, SDNE, Struc2vec, and SVD)*) is available via: [BioNEV Library](https://github.com/bhevencious/BioNEV).
 
 The implementation for our proposed hybrid framework, **ClasReg**, is available for direct installation (from GitHub) via any of the following options, viz:
-## 5.1. Direct Installation via pip
+## 5.1.1. Direct Installation via pip
 ```
 # Python 2
 $ pip install git+https://github.com/bhevencious/ClasReg.git
@@ -68,4 +68,20 @@ $ pip install git+https://github.com/bhevencious/ClasReg.git
 $ pip3 install git+https://github.com/bhevencious/ClasReg.git
 ```
 
-## 5.2. Direct Installation via pip
+## 5.1.2. Installation via repository cloning
+```
+$ git clone https://github.com/bhevencious/ClasReg.git
+$ cd ClasReg
+$ pip install -e .
+```
+
+## 5.1.3. Direct download of repository
+```
+[Click here to initiate download](https://github.com/bhevencious/ClasReg/archive/master.zip)
+```
+
+## 5.2.0. ClasReg's run parameters/options
+ parser.add_argument('-rp', '--root_path', nargs='+', default='generic_datasets/', type=str, help='Generic root path for application/program')    
+    parser.add_argument('-el', '--edge_list', nargs='+', default='CiteSeer', type=str, help='Edge list (filename WITHOUT extension) of reference graph')  #'CiteSeer', 'Cora', 'Internet-Industry-Partnerships', 'PubMed-Diabetes', 'Terrorists-Relation', 'Zachary-Karate'
+    parser.add_argument('-rm', '--run_mode', nargs='+', default='single', type=str, choices=['single', 'all'], help='Run model per specified dataset OR cumulatively for all intrinsic datasets')
+    args = parser.parse_args()
